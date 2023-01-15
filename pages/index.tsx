@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import Cube from "../components/Cube";
 
 export default function Home() {
   return (
@@ -14,17 +15,20 @@ export default function Home() {
 
       <div className="h-screen w-screen overflow-hidden bg-[url('../assets/main-background.jpg')] bg-cover">
         <div className="flex h-full w-full flex-col justify-center bg-white bg-opacity-70">
+          <Cube />
           <section className="text-center">
-            <h2 className="text-lg font-semibold">Full-Stack Developer</h2>
-            <h1 className="mt-2 text-2xl font-bold tracking-widest">
+            <p className="text-lg font-semibold xs:text-xl">
+              Full-Stack Developer
+            </p>
+            <h1 className="mt-2 text-2xl font-bold tracking-widest xs:text-[36px] xs:leading-9">
               TYE STANLEY
             </h1>
 
-            <div className="mx-auto mt-2 h-1 w-[140px] bg-black" />
+            <div className="mx-auto mt-2 h-1 w-[140px] bg-black xs:mt-3 xs:w-[200px]" />
 
-            <div className="mx-auto mt-10 flex w-[320px] justify-around">
+            <div className="mx-auto mt-10 flex w-[320px] justify-around xs:w-[450px]">
               <Link
-                className="flex h-[35px] w-[90px] items-center justify-center rounded border border-black hover:animate-bounce hover:bg-blue-200"
+                className="flex h-[35px] w-[90px] items-center justify-center rounded border border-black hover:animate-bounce hover:bg-blue-200 xs:w-[110px]"
                 href="/about"
               >
                 <Image
@@ -36,7 +40,7 @@ export default function Home() {
                 <p className="ml-1">About</p>
               </Link>
               <Link
-                className="flex h-[35px] w-[90px] items-center justify-center rounded border border-black hover:animate-bounce hover:bg-blue-200"
+                className="flex h-[35px] w-[90px] items-center justify-center rounded border border-black hover:animate-bounce hover:bg-blue-200 xs:w-[110px]"
                 href="/portfolio"
               >
                 <Image
@@ -48,7 +52,7 @@ export default function Home() {
                 <p className="ml-1">Portfolio</p>
               </Link>
               <Link
-                className="flex h-[35px] w-[90px] items-center justify-center rounded border border-black hover:animate-bounce hover:bg-blue-200"
+                className="flex h-[35px] w-[90px] items-center justify-center rounded border border-black hover:animate-bounce hover:bg-blue-200 xs:w-[110px]"
                 href="/contact"
               >
                 <Image
