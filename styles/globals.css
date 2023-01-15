@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("https://fonts.cdnfonts.com/css/poppins");
 *,
 *::before,
 *::after {
@@ -14,6 +14,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -26,11 +27,11 @@ a {
   justify-content: center;
   align-items: center;
   transform-style: preserve-3d;
-  animation: spin 5s linear infinite;
+  animation: spin 10s linear infinite;
 }
 
 .side {
-  --size: 150px;
+  --size: 100px;
 
   display: flex;
   justify-content: center;
@@ -38,10 +39,18 @@ a {
   width: var(--size);
   height: var(--size);
   position: absolute;
-  background-color: hsla(200, 100%, 50%, 0.5);
-  border: 1px solid hsla(200, 100%, 10%, 0.5);
+  background-color: #36393e;
+  border: 2px solid white;
+  border-radius: 0px;
   transform: rotateY(var(--rotate-y, 0)) rotateX(var(--rotate-x, 0))
     translateZ(calc(var(--size) / 2));
+}
+
+@media screen and (min-width: 475px) {
+  .side {
+    --size: 150px;
+    border-radius: 30px;
+  }
 }
 
 .right {
