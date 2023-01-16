@@ -22,6 +22,10 @@ a {
   text-decoration: none;
 }
 
+.delay-1 {
+  animation-delay: 1s;
+}
+
 .cube {
   display: flex;
   justify-content: center;
@@ -71,6 +75,28 @@ a {
 
 .back {
   --rotate-y: 180deg;
+}
+
+.bounce-2 {
+  animation: bounce-new 1s infinite;
+  animation-delay: 0.1s;
+}
+
+.bounce-3 {
+  animation: bounce-new 1s infinite;
+  animation-delay: 0.2s;
+}
+
+@keyframes bounce-new {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 }
 
 .grow-at-start {

@@ -10,7 +10,7 @@ export default function Home() {
         <title>Tye Stanley | Full Stack Developer</title>
         <meta
           name="description"
-          content="Welcome to my homepage! I'm a full stack developer with a passion for creating beautiful and functional websites. I'm currently looking for a full time position as a web developer."
+          content="I'm a full stack developer with a passion for creating beautiful and functional websites. I'm currently looking for a full time position as a web developer."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
@@ -37,7 +37,7 @@ export default function Home() {
 
             <div className="reveal mx-auto mt-10 flex w-[320px] justify-around opacity-0 xs:w-[450px]">
               <Link
-                className="flex h-[35px] w-[90px] items-center justify-center rounded border border-black hover:animate-bounce hover:bg-blue-200 xs:w-[110px]"
+                className="flex h-[35px] w-[90px] animate-bounce items-center justify-center rounded border border-black hover:animate-none hover:bg-[#6BD4FF] xs:w-[110px]"
                 href="/about"
               >
                 <Image
@@ -49,7 +49,7 @@ export default function Home() {
                 <p className="ml-1">About</p>
               </Link>
               <Link
-                className="flex h-[35px] w-[90px] items-center justify-center rounded border border-black hover:animate-bounce hover:bg-blue-200 xs:w-[110px]"
+                className="bounce-2 flex h-[35px] w-[90px] items-center justify-center rounded border border-black hover:animate-none hover:bg-[#6BD4FF] xs:w-[110px]"
                 href="/portfolio"
               >
                 <Image
@@ -61,7 +61,7 @@ export default function Home() {
                 <p className="ml-1">Portfolio</p>
               </Link>
               <Link
-                className="flex h-[35px] w-[90px] items-center justify-center rounded border border-black hover:animate-bounce hover:bg-blue-200 xs:w-[110px]"
+                className="bounce-3 flex h-[35px] w-[90px] items-center justify-center rounded border border-black hover:animate-none hover:bg-[#6BD4FF] xs:w-[110px]"
                 href="/contact"
               >
                 <Image
@@ -77,9 +77,10 @@ export default function Home() {
             <div className="rotate-item mx-auto mt-10 flex w-[200px] justify-between opacity-0">
               <Link
                 href="https://github.com/TyeStanley"
-                className="border-1 rounded border border-white p-1 hover:animate-bounce hover:bg-blue-200"
+                className="border-1 rounded border border-white p-1 hover:bg-[#6BD4FF]"
               >
                 <Image
+                  className="hover:animate-bounce"
                   src={require("../assets/icons/github-icon.png")}
                   alt="Github Icon"
                   width={"40"}
@@ -88,9 +89,10 @@ export default function Home() {
               </Link>
               <Link
                 href="https://www.linkedin.com/in/tye-stanley/"
-                className="border-1 rounded border border-white p-1 hover:animate-bounce hover:bg-blue-200"
+                className="border-1 rounded border border-white p-1 hover:bg-[#6BD4FF]"
               >
                 <Image
+                  className="hover:animate-bounce"
                   src={require("../assets/icons/linkedin-icon.png")}
                   alt="Linkedin Icon"
                   width={"40"}
@@ -99,9 +101,10 @@ export default function Home() {
               </Link>
               <Link
                 href="https://stackoverflow.com/users/17858669/tye-stanley"
-                className="border-1 rounded border border-white p-1 hover:animate-bounce hover:bg-blue-200"
+                className="border-1 rounded border border-white p-1 hover:bg-[#6BD4FF]"
               >
                 <Image
+                  className="hover:animate-bounce"
                   src={require("../assets/icons/stack-overflow-icon.png")}
                   alt="Stack Overflow Icon"
                   width={"40"}
