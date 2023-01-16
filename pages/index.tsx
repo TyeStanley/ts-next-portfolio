@@ -13,11 +13,11 @@ export default function Home() {
         <link rel="icon" href="/thirteen.svg" />
       </Head>
 
-      <div className="h-screen w-screen overflow-hidden bg-[url('../assets/main-background.jpg')] bg-cover">
+      <div className="h-screen w-screen overflow-hidden bg-[url('../assets/main-background.jpg')] bg-cover bg-center">
         <div className="flex h-full w-full flex-col justify-center bg-white bg-opacity-70">
           <Cube />
           <section className="text-center">
-            <div className="mx-auto w-[300px] rounded-lg border border-black bg-[#fff]/[.5] p-4 xs:w-[410px]">
+            <div className="grow-at-start mx-auto w-[300px] rounded-lg border border-black bg-[#fff]/[.5] p-4 opacity-0 xs:w-[410px]">
               <p className="text-md font-medium xs:text-xl sm:text-[26px]">
                 Full-Stack Developer
               </p>
@@ -30,7 +30,7 @@ export default function Home() {
 
             <div className="mx-auto mt-10 flex w-[320px] justify-around xs:w-[450px]">
               <Link
-                className="flex h-[35px] w-[90px] items-center justify-center rounded border border-black hover:animate-bounce hover:bg-blue-200 xs:w-[110px]"
+                className="reveal flex h-[35px] w-[90px] items-center justify-center rounded border border-black opacity-0 hover:animate-bounce hover:bg-blue-200 xs:w-[110px]"
                 href="/about"
               >
                 <Image
@@ -42,7 +42,7 @@ export default function Home() {
                 <p className="ml-1">About</p>
               </Link>
               <Link
-                className="flex h-[35px] w-[90px] items-center justify-center rounded border border-black hover:animate-bounce hover:bg-blue-200 xs:w-[110px]"
+                className="reveal flex h-[35px] w-[90px] items-center justify-center rounded border border-black opacity-0 hover:animate-bounce hover:bg-blue-200 xs:w-[110px]"
                 href="/portfolio"
               >
                 <Image
@@ -54,7 +54,7 @@ export default function Home() {
                 <p className="ml-1">Portfolio</p>
               </Link>
               <Link
-                className="flex h-[35px] w-[90px] items-center justify-center rounded border border-black hover:animate-bounce hover:bg-blue-200 xs:w-[110px]"
+                className="reveal flex h-[35px] w-[90px] items-center justify-center rounded border border-black opacity-0 hover:animate-bounce hover:bg-blue-200 xs:w-[110px]"
                 href="/contact"
               >
                 <Image
@@ -70,7 +70,7 @@ export default function Home() {
             <div className="mx-auto mt-10 flex w-[200px] justify-between">
               <Link
                 href="https://github.com/TyeStanley"
-                className="border-1 rounded border border-white p-1 hover:animate-bounce hover:bg-blue-200"
+                className="rotate-item border-1 rounded border border-white p-1 opacity-0 hover:animate-bounce hover:bg-blue-200"
               >
                 <Image
                   src={require("../assets/icons/github-icon.png")}
@@ -81,7 +81,7 @@ export default function Home() {
               </Link>
               <Link
                 href="https://www.linkedin.com/in/tye-stanley/"
-                className="border-1 rounded border border-white p-1 hover:animate-bounce hover:bg-blue-200"
+                className="rotate-item border-1 rounded border border-white p-1 opacity-0 hover:animate-bounce hover:bg-blue-200"
               >
                 <Image
                   src={require("../assets/icons/linkedin-icon.png")}
@@ -92,7 +92,7 @@ export default function Home() {
               </Link>
               <Link
                 href="https://stackoverflow.com/users/17858669/tye-stanley"
-                className="border-1 rounded border border-white p-1 hover:animate-bounce hover:bg-blue-200"
+                className="rotate-item border-1 rounded border border-white p-1 opacity-0 hover:animate-bounce hover:bg-blue-200"
               >
                 <Image
                   src={require("../assets/icons/stack-overflow-icon.png")}
