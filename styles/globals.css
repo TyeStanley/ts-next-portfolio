@@ -97,6 +97,16 @@ a {
   animation-delay: 2s;
 }
 
+@keyframes spin {
+  0% {
+    transform: rotateX(0) rotateY(0);
+  }
+
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
 @keyframes grow-at-start {
   0% {
     opacity: 1;
@@ -105,16 +115,6 @@ a {
   100% {
     transform: scale(1);
     opacity: 1;
-  }
-}
-
-@keyframes spin {
-  0% {
-    transform: rotateX(0) rotateY(0);
-  }
-
-  100% {
-    transform: rotateX(360deg) rotateY(360deg);
   }
 }
 

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Web Developer | Tye Stanley</title>
+        <title>Tye Stanley | Full Stack Developer</title>
         <meta
           name="description"
           content="Welcome to my homepage! I'm a full stack developer with a passion for creating beautiful and functional websites. I'm currently looking for a full time position as a web developer."
@@ -15,7 +15,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           property="og:image"
-          content="https://drive.google.com/file/d/1nAJ3kedvix4xul0D1hFmacI6JhFCU3-2/view"
+          content="https://i.ibb.co/4JsC4fD/portfolio.png"
         />
         <link rel="icon" href="/thirteen.svg" />
       </Head>
