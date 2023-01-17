@@ -43,22 +43,22 @@ export default function About() {
       <div className="h-screen w-screen overflow-hidden bg-[url('../assets/main-background.jpg')] bg-cover bg-center bg-no-repeat">
         <div className="justify-top flex h-full w-full flex-col bg-white bg-opacity-70">
           {/* nav goes here */}
-          <section className="mx-auto w-[95vw] rounded-xl border border-black bg-white bg-opacity-40 px-5 text-center">
+          <section className="mx-auto w-[95vw] rounded-xl border border-sky-400 bg-gray-50/50 px-5 text-center">
             <Image
-              className="mx-auto mt-5 rounded-full border-2 border-[#6BD4FF]"
+              className="mx-auto mt-5 rounded-full border-2 border-sky-400"
               src={photo}
               alt="Professional Photo"
               width={175}
               height={175}
             />
-            <h1 className="mt-5 text-[32px] font-extrabold sm:text-[42px]">
+            <h1 className="mt-5 text-[32px] font-extrabold text-sky-900 sm:text-[42px]">
               Tye Stanley
             </h1>
-            <p className="mt-5 text-[12px] font-bold xs:text-lg">
+            <p className="mt-5 text-[12px] font-bold text-sky-800 xs:text-lg">
               TypeScript, React.js, Next.js, Node.js, Tailwind CSS, MongoDB,
               MySQL
             </p>
-            <p className="md: mt-5 text-xs xs:mx-auto xs:w-[410px] xs:text-base xs:leading-normal sm:w-[500px] sm:text-[1rem] md:w-[700px] md:text-lg">
+            <p className="md: mt-5 text-xs text-sky-700 xs:mx-auto xs:w-[410px] xs:text-base xs:leading-normal sm:w-[500px] sm:text-[1rem] md:w-[700px] md:text-lg">
               I&apos;m an established and driven software engineer applying Full
               Stack Developer background with a strong drive to improve/learn
               skill sets in relation to creating full-fledged websites with high
@@ -69,13 +69,13 @@ export default function About() {
             <div className="mt-5 mb-5">
               <button
                 onClick={() => handleClick()}
-                className="text-shadow m-1 h-[35px] w-[100px] rounded border border-white bg-[#6BD4FF] text-white shadow-md hover:border-[#6BD4FF] hover:bg-white hover:text-[#6BD4FF]"
+                className="m-1 h-[35px] w-[100px] rounded border border-gray-100 bg-sky-500 text-gray-100 shadow-md hover:bg-sky-400"
               >
                 FRONT-END
               </button>
               <button
                 onClick={() => handleClick2()}
-                className="text-shadow m-1 h-[35px] w-[100px] rounded border border-white bg-[#6BD4FF] text-white shadow-md hover:border-[#6BD4FF] hover:bg-white hover:text-[#6BD4FF]"
+                className="m-1 h-[35px] w-[100px] rounded border border-gray-100 bg-sky-500 text-gray-100 shadow-md hover:bg-sky-400"
               >
                 BACK-END
               </button>
