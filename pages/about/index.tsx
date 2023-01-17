@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
-import TechModal from "../components/TechModal";
+import TechModal from "../../components/TechModal";
 
-const photo = require("../assets/professional-photo.jpg");
+const photo = require("../../assets/professional-photo.jpg");
 
 export default function About() {
   const [isOpen, setIsOpen] = useState(false);
