@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import Cube from "../components/Cube";
+import Cube from "../components/cube";
 
 export default function Home() {
   return (

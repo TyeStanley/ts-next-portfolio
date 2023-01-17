@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
-import TechModal from "../components/TechModal";
+import TechModal from "../components/techmodal";
 
 const photo = require("../assets/professional-photo.jpg");
 
