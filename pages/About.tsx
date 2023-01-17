@@ -21,6 +21,7 @@ export default function About() {
     <>
       <Head>
         <title>About Page | Tye Stanley</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
       <TechModal
@@ -53,14 +54,14 @@ export default function About() {
             <h1 className="mt-5 text-[32px] font-extrabold sm:text-[42px]">
               Tye Stanley
             </h1>
-            <p className="mt-5 text-[12px] font-bold sm:text-[14px]">
+            <p className="mt-5 text-[12px] font-bold xs:text-lg">
               TypeScript, React.js, Next.js, Node.js, Tailwind CSS, MongoDB,
               MySQL
             </p>
-            <p className="mt-5 text-xs xs:mx-auto xs:w-[410px] sm:w-[500px] sm:text-[1rem] sm:leading-normal">
-              Established and driven software engineer applying Full Stack
-              Developer background with a strong drive to improve/learn skill
-              sets in relation to creating full-fledged websites with high
+            <p className="md: mt-5 text-xs xs:mx-auto xs:w-[410px] xs:text-base xs:leading-normal sm:w-[500px] sm:text-[1rem] md:w-[700px] md:text-lg">
+              I&apos;m an established and driven software engineer applying Full
+              Stack Developer background with a strong drive to improve/learn
+              skill sets in relation to creating full-fledged websites with high
               performance and strong optimization. I have graduated from the
               Bootcamp program and obtained my certificate in full stack web
               development from UT University.

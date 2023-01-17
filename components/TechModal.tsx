@@ -31,15 +31,15 @@ export default function TechModal(props: AboutProps) {
             leaveTo="opacity-0 scale-0"
           >
             <div className="fixed inset-0 flex items-center justify-center border-2 border-[#6BD4FF] bg-white/50 p-5 text-center">
-              <Dialog.Panel className="border border-[#6BD4FF] bg-white p-1">
-                <Dialog.Title className="mt-5 text-lg font-extrabold">
+              <Dialog.Panel className="border border-[#6BD4FF] bg-white p-1 md:w-[650px] md:p-5 lg:w-[800px]">
+                <Dialog.Title className="mt-5 text-lg font-extrabold md:text-[1.5rem] lg:text-[1.75rem]">
                   {title}
                 </Dialog.Title>
                 <div className="line-pulse mx-auto mt-5 h-[1px] w-[100px] bg-black" />
-                <Dialog.Description className="mt-5 text-[12px] font-bold">
+                <Dialog.Description className="mt-5 text-[12px] font-bold md:text-[1rem] lg:text-[1.25rem]">
                   {techList}
                 </Dialog.Description>
-                <Dialog.Description className="mt-5 mb-5 text-sm">
+                <Dialog.Description className="mt-5 mb-5 text-sm md:text-[1rem] lg:text-[1.25rem]">
                   {description}
                 </Dialog.Description>
               </Dialog.Panel>
