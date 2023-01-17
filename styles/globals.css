@@ -77,6 +77,10 @@ a {
   --rotate-y: 180deg;
 }
 
+.text-shadow {
+  text-shadow: 1px 1px 1px black;
+}
+
 .bounce-2 {
   animation: bounce-new 1s infinite;
   animation-delay: 0.1s;
@@ -85,6 +89,23 @@ a {
 .bounce-3 {
   animation: bounce-new 1s infinite;
   animation-delay: 0.2s;
+}
+
+.line-pulse {
+  animation: line-pulse 2s infinite;
+  animation-delay: 0.3s;
+}
+
+@keyframes line-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes bounce-new {

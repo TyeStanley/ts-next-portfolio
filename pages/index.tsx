@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Tye Stanley | Full Stack Developer</title>
+        <title>Full Stack Developer | Tye Stanley</title>
         <meta
           name="description"
           content="I'm a full stack developer with a passion for creating beautiful and functional websites. I'm currently looking for a full time position as a web developer."
@@ -77,10 +77,10 @@ export default function Home() {
             <div className="rotate-item mx-auto mt-10 flex w-[200px] justify-between opacity-0">
               <Link
                 href="https://github.com/TyeStanley"
-                className="border-1 rounded border border-white p-1 hover:bg-[#6BD4FF]"
+                className="border-1 rounded border-2 border-white p-1 transition-all hover:border-t-transparent"
               >
                 <Image
-                  className="hover:animate-bounce"
+                  className="transition-all hover:animate-bounce"
                   src={require("../assets/icons/github-icon.png")}
                   alt="Github Icon"
                   width={"40"}
@@ -89,10 +89,10 @@ export default function Home() {
               </Link>
               <Link
                 href="https://www.linkedin.com/in/tye-stanley/"
-                className="border-1 rounded border border-white p-1 hover:bg-[#6BD4FF]"
+                className="border-1 rounded border-2 border-white p-1 transition-all hover:border-t-transparent"
               >
                 <Image
-                  className="hover:animate-bounce"
+                  className="transition-all hover:animate-bounce"
                   src={require("../assets/icons/linkedin-icon.png")}
                   alt="Linkedin Icon"
                   width={"40"}
@@ -101,10 +101,10 @@ export default function Home() {
               </Link>
               <Link
                 href="https://stackoverflow.com/users/17858669/tye-stanley"
-                className="border-1 rounded border border-white p-1 hover:bg-[#6BD4FF]"
+                className="border-1 rounded border-2 border-white p-1 transition-all hover:border-t-transparent"
               >
                 <Image
-                  className="hover:animate-bounce"
+                  className="transition-all hover:animate-bounce"
                   src={require("../assets/icons/stack-overflow-icon.png")}
                   alt="Stack Overflow Icon"
                   width={"40"}
