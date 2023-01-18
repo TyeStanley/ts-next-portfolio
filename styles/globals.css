@@ -197,3 +197,24 @@ a {
     transform: rotatex(1turn);
   }
 }
+
+#hamburger span {
+  transition: 0.25s ease-in-out;
+}
+
+.hamburger span:first-child {
+  width: 0;
+}
+
+.hamburger span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.hamburger > span:nth-child(3) {
+  transform: rotate(-45deg);
+  visibility: visible;
+}
+
+.hamburger span:last-child {
+  width: 0;
+}

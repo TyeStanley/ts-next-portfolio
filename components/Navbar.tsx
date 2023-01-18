@@ -1,32 +1,71 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import NavMenu from "./NavMenu";
 
 const HomeIcon = require("../assets/icons/home-button.png");
+const about =
+  "my-3 w-[200px] border border-sky-400 bg-gray-100 px-2 py-2 text-3xl text-sky-500";
+const portfolio =
+  "my-3 w-[200px] border border-sky-400 bg-gray-100 px-2 py-2 text-3xl text-sky-500";
+const contact =
+  "my-3 w-[200px] border border-sky-400 bg-gray-100 px-2 py-2 text-3xl text-sky-500";
 
 export default function Navbar() {
-  return (
-    <nav className="">
-      <div className="mx-auto mt-4 flex w-[95vw] items-center justify-between">
-        <div className="flex space-x-2">
-          <h1 className="text-4xl font-extrabold text-sky-900">About</h1>
-          <Link
-            href="/"
-            className="flex items-center justify-center hover:shadow-lg"
-          >
-            <Image src={HomeIcon} alt="Home Icon" width={30} height={30} />
-          </Link>
-        </div>
+  const [isOpen, setIsOpen] = useState(false);
 
-        <div className="flex h-[40px] items-end text-xl text-sky-800">
-          <Link href="/about">About</Link>
-          <Link href="/portfolio" className="ml-2">
-            Portfolio
-          </Link>
-          <Link href="/contact" className="ml-2">
-            Contact
-          </Link>
+  function handleClick() {
+    const hamburger: HTMLElement | null = document.getElementById("hamburger");
+
+    setIsOpen(!isOpen);
+
+    if (hamburger !== null) hamburger.classList.toggle("hamburger");
+  }
+
+  return (
+    <>
+      <NavMenu
+        isOpen={isOpen}
+        about={about}
+        portfolio={portfolio}
+        contact={contact}
+      />
+      <nav className="z-50">
+        <div className="mx-auto mt-4 flex w-[95vw] items-center justify-between">
+          <div className="flex space-x-2">
+            <h1 className="text-4xl font-extrabold text-sky-900">About</h1>
+            <Link
+              href="/"
+              className="flex items-center justify-center hover:shadow-lg"
+            >
+              <Image src={HomeIcon} alt="Home Icon" width={30} height={30} />
+            </Link>
+          </div>
+
+          <div className="hidden h-[40px] items-end text-xl text-sky-800 sm:flex">
+            <Link href="/about" className="animate-pulse">
+              About
+            </Link>
+            <Link href="/portfolio" className="ml-2 animate-pulse">
+              Portfolio
+            </Link>
+            <Link href="/contact" className="ml-2 animate-pulse">
+              Contact
+            </Link>
+          </div>
+
+          <div
+            id="hamburger"
+            className="relative py-2 transition-all sm:hidden"
+            onClick={handleClick}
+          >
+            <span className="relative bottom-[4px] block h-1 w-8 animate-pulse rounded bg-sky-400" />
+            <span className="relative top-[2px] block h-1 w-8 animate-pulse rounded bg-sky-400" />
+            <span className="invisible relative bottom-[2px] block h-1 w-8 animate-pulse rounded bg-sky-400" />
+            <span className="relative top-[4px] block h-1 w-8 animate-pulse rounded bg-sky-400" />
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 }
