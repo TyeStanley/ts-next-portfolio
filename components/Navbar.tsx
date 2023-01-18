@@ -4,12 +4,6 @@ import { useState } from "react";
 import NavMenu from "./NavMenu";
 
 const HomeIcon = require("../assets/icons/home-button.png");
-const about =
-  "my-3 w-[200px] border border-sky-400 bg-gray-100 px-2 py-2 text-3xl text-sky-500";
-const portfolio =
-  "my-3 w-[200px] border border-sky-400 bg-gray-100 px-2 py-2 text-3xl text-sky-500";
-const contact =
-  "my-3 w-[200px] border border-sky-400 bg-gray-100 px-2 py-2 text-3xl text-sky-500";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,12 +18,7 @@ export default function Navbar() {
 
   return (
     <>
-      <NavMenu
-        isOpen={isOpen}
-        about={about}
-        portfolio={portfolio}
-        contact={contact}
-      />
+      <NavMenu isOpen={isOpen} />
       <nav className="z-50">
         <div className="mx-auto mt-4 flex w-[95vw] items-center justify-between">
           <div className="flex space-x-2">

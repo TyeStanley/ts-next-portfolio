@@ -4,14 +4,9 @@ import Link from "next/link";
 
 interface NavMenuProps {
   isOpen: boolean;
-  about: string;
-  portfolio: string;
-  contact: string;
 }
 
-export default function NavMenu(props: NavMenuProps) {
-  const { isOpen, about, portfolio, contact } = props;
-
+export default function NavMenu({ isOpen }: NavMenuProps) {
   return (
     <Transition
       as={Fragment}
@@ -26,13 +21,22 @@ export default function NavMenu(props: NavMenuProps) {
     >
       <div className="fixed inset-0 bg-sky-50">
         <div className="flex h-full flex-col items-center justify-center text-center">
-          <Link href="/about" className={about}>
+          <Link
+            href="/about"
+            className="my-3 w-[200px] border border-sky-400 bg-gray-100 px-2 py-2 text-3xl text-sky-500"
+          >
             About
           </Link>
-          <Link href="/portfolio" className={portfolio}>
+          <Link
+            href="/portfolio"
+            className="my-3 w-[200px] border border-sky-400 bg-gray-100 px-2 py-2 text-3xl text-sky-500"
+          >
             Portfolio
           </Link>
-          <Link href="/contact" className={contact}>
+          <Link
+            href="/contact"
+            className="my-3 w-[200px] border border-sky-400 bg-gray-100 px-2 py-2 text-3xl text-sky-500"
+          >
             Contact
           </Link>
         </div>
