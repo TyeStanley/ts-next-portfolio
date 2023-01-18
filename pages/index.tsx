@@ -49,7 +49,7 @@ export default function Home() {
                 <p className="ml-1">About</p>
               </Link>
               <Link
-                className="flex h-[35px] w-[90px] animate-bounce items-center justify-center rounded border border-sky-400 bg-sky-50/[.7] text-sky-700 hover:animate-none hover:bg-sky-200 xs:w-[110px]"
+                className="bounce-2 flex h-[35px] w-[90px] items-center justify-center rounded border border-sky-400 bg-sky-50/[.7] text-sky-700 hover:animate-none hover:bg-sky-200 xs:w-[110px]"
                 href="/portfolio"
               >
                 <Image
@@ -61,7 +61,7 @@ export default function Home() {
                 <p className="ml-1">Portfolio</p>
               </Link>
               <Link
-                className="flex h-[35px] w-[90px] animate-bounce items-center justify-center rounded border border-sky-400 bg-sky-50/[.7] text-sky-700 hover:animate-none hover:bg-sky-200 xs:w-[110px]"
+                className="bounce-3 flex h-[35px] w-[90px] items-center justify-center rounded border border-sky-400 bg-sky-50/[.7] text-sky-700 hover:animate-none hover:bg-sky-200 xs:w-[110px]"
                 href="/contact"
               >
                 <Image

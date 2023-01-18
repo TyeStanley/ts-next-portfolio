@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
 import TechModal from "../../components/TechModal";
+import Navbar from "../../components/Navbar";
 
 const photo = require("../../assets/professional-photo.jpg");
 
@@ -42,7 +43,7 @@ export default function About() {
 
       <div className="h-screen w-screen overflow-hidden bg-[url('../assets/main-background.jpg')] bg-cover bg-center bg-no-repeat">
         <div className="justify-top flex h-full w-full flex-col bg-white/70">
-          {/* nav goes here */}
+          <Navbar />
           <section className="mx-auto w-[95vw] rounded-xl border border-sky-400 bg-sky-50/70 px-5 text-center">
             <Image
               className="mx-auto mt-5 rounded-full border-2 border-sky-400"
