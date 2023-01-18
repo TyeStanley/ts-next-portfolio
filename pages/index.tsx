@@ -24,20 +24,20 @@ export default function Home() {
         <div className="flex h-full w-full flex-col justify-center bg-white bg-opacity-70">
           <Cube />
           <section className="text-center">
-            <div className="grow-at-start mx-auto w-[300px] rounded-lg border border-black bg-[#fff]/[.5] p-4 opacity-0 xs:w-[410px]">
-              <p className="text-md font-medium xs:text-xl sm:text-[26px]">
+            <div className="grow-at-start mx-auto w-[300px] rounded-lg border border-sky-400 bg-sky-50/70 p-4 opacity-0 xs:w-[410px]">
+              <p className="text-md font-medium text-sky-800 xs:text-xl sm:text-[26px]">
                 Full-Stack Developer
               </p>
-              <h1 className="mt-2 text-2xl font-medium tracking-widest xs:text-[36px] xs:leading-9 sm:mt-5 sm:text-[46px]">
+              <h1 className="mt-2 text-2xl font-medium tracking-widest text-sky-900 xs:text-[36px] xs:leading-9 sm:mt-5 sm:text-[46px]">
                 TYE STANLEY
               </h1>
 
-              <div className="mx-auto mt-2 h-1 w-[140px] bg-black xs:mt-3 xs:w-[200px] sm:w-[225px]" />
+              <div className="mx-auto mt-2 h-[2px] w-[140px] bg-sky-400 xs:mt-3 xs:w-[200px] sm:w-[225px]" />
             </div>
 
             <div className="reveal mx-auto mt-10 flex w-[320px] justify-around opacity-0 xs:w-[450px]">
               <Link
-                className="flex h-[35px] w-[90px] animate-bounce items-center justify-center rounded border border-black hover:animate-none hover:bg-[#6BD4FF] xs:w-[110px]"
+                className="flex h-[35px] w-[90px] animate-bounce items-center justify-center rounded border border-sky-400 bg-sky-50/[.7] text-sky-700 hover:animate-none hover:bg-sky-200 xs:w-[110px]"
                 href="/about"
               >
                 <Image
@@ -49,7 +49,7 @@ export default function Home() {
                 <p className="ml-1">About</p>
               </Link>
               <Link
-                className="bounce-2 flex h-[35px] w-[90px] items-center justify-center rounded border border-black hover:animate-none hover:bg-[#6BD4FF] xs:w-[110px]"
+                className="flex h-[35px] w-[90px] animate-bounce items-center justify-center rounded border border-sky-400 bg-sky-50/[.7] text-sky-700 hover:animate-none hover:bg-sky-200 xs:w-[110px]"
                 href="/portfolio"
               >
                 <Image
@@ -61,7 +61,7 @@ export default function Home() {
                 <p className="ml-1">Portfolio</p>
               </Link>
               <Link
-                className="bounce-3 flex h-[35px] w-[90px] items-center justify-center rounded border border-black hover:animate-none hover:bg-[#6BD4FF] xs:w-[110px]"
+                className="flex h-[35px] w-[90px] animate-bounce items-center justify-center rounded border border-sky-400 bg-sky-50/[.7] text-sky-700 hover:animate-none hover:bg-sky-200 xs:w-[110px]"
                 href="/contact"
               >
                 <Image
@@ -77,7 +77,7 @@ export default function Home() {
             <div className="rotate-item mx-auto mt-10 flex w-[200px] justify-between opacity-0">
               <Link
                 href="https://github.com/TyeStanley"
-                className="border-1 rounded border-2 border-white p-1 transition-all hover:border-t-transparent"
+                className="border-1 rounded border border-sky-400 p-1 transition-all hover:border-t-transparent"
               >
                 <Image
                   className="transition-all hover:animate-bounce"
@@ -89,7 +89,7 @@ export default function Home() {
               </Link>
               <Link
                 href="https://www.linkedin.com/in/tye-stanley/"
-                className="border-1 rounded border-2 border-white p-1 transition-all hover:border-t-transparent"
+                className="border-1 rounded border border-sky-400 p-1 transition-all hover:border-t-transparent"
               >
                 <Image
                   className="transition-all hover:animate-bounce"
@@ -101,7 +101,7 @@ export default function Home() {
               </Link>
               <Link
                 href="https://stackoverflow.com/users/17858669/tye-stanley"
-                className="border-1 rounded border-2 border-white p-1 transition-all hover:border-t-transparent"
+                className="border-1 rounded border border-sky-400 p-1 transition-all hover:border-t-transparent"
               >
                 <Image
                   className="transition-all hover:animate-bounce"
