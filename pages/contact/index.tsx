@@ -117,8 +117,6 @@ export default function Contact() {
                   onChange={(e) => setMessage(e.target.value)}
                   label="Message"
                   variant="outlined"
-                  min="5"
-                  max="24"
                   required
                   multiline
                   rows={5}
