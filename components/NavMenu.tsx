@@ -19,7 +19,7 @@ export default function NavMenu({ isOpen }: NavMenuProps) {
       leaveFrom="opacity-100 scale-1"
       leaveTo="opacity-0 scale-0"
     >
-      <div className="fixed inset-0 bg-sky-50">
+      <div className="fixed inset-0 z-50 bg-sky-50">
         <div className="flex h-full flex-col items-center justify-center text-center">
           <Link
             href="/about"

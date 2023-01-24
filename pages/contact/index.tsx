@@ -116,6 +116,7 @@ export default function Contact() {
                     marginLeft: "auto",
                     marginRight: "auto",
                     maxWidth: "400px",
+                    zIndex: 0,
                   }}
                   id="message-input"
                   value={message}
