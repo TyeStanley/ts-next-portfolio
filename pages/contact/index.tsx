@@ -8,11 +8,7 @@ import OutlinedInput from "@mui/material/OutlinedInput";
 import { TextField } from "@mui/material";
 import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
-import {
-  validateName,
-  validateEmail,
-  validateMessage,
-} from "../../utils/helpers";
+import { validateName, validateEmail } from "../../utils/helpers";
 
 export default function Contact() {
   const [name, setName] = useState<string>("");
@@ -29,7 +25,6 @@ export default function Contact() {
     // VALIDATION
     validateName({ name, setNameError });
     validateEmail({ email, setEmailError });
-    validateMessage({ message, setMessageError });
 
     // if (send) {
     //   setName("");
@@ -58,7 +53,7 @@ export default function Contact() {
         <div className="justify-top flex h-full w-full flex-col bg-white/70">
           <Navbar />
           <section className="mx-auto w-[95vw] rounded-xl border border-sky-400 bg-sky-50/70 px-5 text-center">
-            <h1 className="mt-5 text-lg font-extrabold text-sky-900 sm:text-[42px]">
+            <h1 className="mt-5 text-lg font-extrabold text-sky-900 sm:text-[36px]">
               Send me a message!
             </h1>
             <p className="mx-auto mt-5 max-w-[768px] text-[12px] font-bold text-sky-800 xs:text-lg">
@@ -67,8 +62,15 @@ export default function Contact() {
               contact me!
             </p>
             {/* <form onSubmit={submitHandler}> */}
-            <form>
-              <Box className="mx-auto mt-5 max-w-[400px]">
+            <form className="max-width-[400px]">
+              <Box
+                sx={{
+                  marginTop: 3,
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                  maxWidth: "400px",
+                }}
+              >
                 <FormControl fullWidth required>
                   <InputLabel htmlFor="name-input">Name</InputLabel>
                   <OutlinedInput
@@ -78,16 +80,20 @@ export default function Contact() {
                     label="Name"
                     required
                   />
-                  <FormHelperText
-                    id="my-helper-text"
-                    className="text-[#d8364c]"
-                  >
+                  <FormHelperText id="my-helper-text" sx={{ color: "#d8364c" }}>
                     {nameError}
                   </FormHelperText>
                 </FormControl>
               </Box>
 
-              <Box className="mx-auto mt-5 max-w-[400px]">
+              <Box
+                sx={{
+                  marginTop: 3,
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                  maxWidth: "400px",
+                }}
+              >
                 <FormControl fullWidth required>
                   <InputLabel htmlFor="email-input">Email</InputLabel>
                   <OutlinedInput
@@ -97,21 +103,20 @@ export default function Contact() {
                     label="Name"
                     required
                   />
-                  <FormHelperText
-                    id="my-helper-text"
-                    className="text-[#d8364c]"
-                  >
+                  <FormHelperText id="my-helper-text" sx={{ color: "#d8364c" }}>
                     {emailError}
                   </FormHelperText>
                 </FormControl>
               </Box>
 
-              <FormControl fullWidth>
+              <FormControl fullWidth required>
                 <TextField
                   sx={{
-                    marginTop: 2,
+                    marginTop: 3,
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                    maxWidth: "400px",
                   }}
-                  className="mx-auto max-w-[400px]"
                   id="message-input"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
@@ -122,19 +127,13 @@ export default function Contact() {
                   rows={5}
                   fullWidth
                 />
-                <FormHelperText
-                  id="my-helper-text"
-                  sx={{ color: "#d8364c", paddingLeft: 1.5 }}
-                >
-                  {messageError}
-                </FormHelperText>
               </FormControl>
 
               <FormControl color="primary">
                 <Button
                   sx={{
                     "& > :not(style)": { m: 1 },
-                    marginTop: 2,
+                    marginTop: 3,
                     paddingRight: 1,
                     paddingTop: 0,
                     paddingBottom: 0,
