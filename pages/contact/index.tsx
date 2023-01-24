@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Head from "next/head";
 import Navbar from "../../components/Navbar";
 import Box from "@mui/material/Box";
 import FormControl from "@mui/material/FormControl";
@@ -61,6 +62,11 @@ export default function Contact() {
 
   return (
     <>
+      <Head>
+        <title>Contact Page | Tye Stanley</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+
       <div className="h-screen w-screen overflow-hidden bg-[url('../assets/main-background.jpg')] bg-cover bg-center bg-no-repeat">
         <div className="justify-top flex h-full w-full flex-col bg-white/70">
           <Navbar />
