@@ -17,36 +17,48 @@ export default function Contact() {
 
   const [nameError, setNameError] = useState<string>();
   const [emailError, setEmailError] = useState<string>();
-  const [messageError, setMessageError] = useState<string>();
 
-  // const [send, setSend] = useState();
+  const [send, setSend] = useState<boolean>(false);
 
   useEffect(() => {
     // VALIDATION
     validateName({ name, setNameError });
     validateEmail({ email, setEmailError });
 
-    // if (send) {
-    //   setName("");
-    //   setEmail("");
-    //   setMessage("");
-    // }
-  }, [name, email, message]);
+    if (send) {
+      setName("");
+      setEmail("");
+      setMessage("");
+    }
+  }, [name, email, message, send]);
 
-  function submitHandler(e: React.FormEvent<HTMLFormElement>) {
+  const submitHandler = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (
       !nameError &&
       !emailError &&
-      !messageError &&
       name !== "" &&
       email !== "" &&
       message !== ""
     ) {
-      // SendEmail({ name, email, message, setSend });
+      const data = { name, email, message };
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      const json = await response.json();
+      console.log(json);
+      setSend(true);
+      setTimeout(setSendToFalse, 5000);
     }
+  };
+
+  function setSendToFalse() {
+    setSend(false);
   }
+
   return (
     <>
       <div className="h-screen w-screen overflow-hidden bg-[url('../assets/main-background.jpg')] bg-cover bg-center bg-no-repeat">
@@ -61,8 +73,8 @@ export default function Contact() {
               questions or would like to work together, please feel free to
               contact me!
             </p>
-            {/* <form onSubmit={submitHandler}> */}
-            <form className="max-width-[400px]">
+
+            <form className="max-width-[400px]" onSubmit={submitHandler}>
               <Box
                 sx={{
                   marginTop: 3,
@@ -148,8 +160,8 @@ export default function Contact() {
                 </Button>
               </FormControl>
 
-              <p className="my-5 mx-auto text-green-500">
-                {/* {send ? "Message has been successfully sent!" : null} */}
+              <p className="my-5 mx-auto text-[14px] text-green-500 sm:text-[16px]">
+                {send ? "Message has been successfully sent!" : null}
               </p>
             </form>
           </section>
