@@ -5,7 +5,11 @@ import NavMenu from "./NavMenu";
 
 const HomeIcon = require("../assets/icons/home-button.png");
 
-export default function Navbar() {
+interface NavbarProps {
+  name: string;
+}
+
+export default function Navbar({ name }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   function handleClick() {
@@ -22,7 +26,7 @@ export default function Navbar() {
       <nav className="z-50">
         <div className="mx-auto mt-4 flex w-[95vw] items-center justify-between">
           <div className="flex space-x-2">
-            <h1 className="text-4xl font-extrabold text-sky-900">About</h1>
+            <h1 className="text-4xl font-extrabold text-sky-900">{name}</h1>
             <Link
               href="/"
               className="flex items-center justify-center hover:shadow-lg"

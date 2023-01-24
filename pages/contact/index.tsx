@@ -69,7 +69,7 @@ export default function Contact() {
 
       <div className="h-screen w-screen overflow-hidden bg-[url('../assets/main-background.jpg')] bg-cover bg-center bg-no-repeat">
         <div className="justify-top flex h-full w-full flex-col bg-white/70">
-          <Navbar />
+          <Navbar name="Contact" />
           <section className="mx-auto w-[95vw] rounded-xl border border-sky-400 bg-sky-50/70 px-5 text-center">
             <h1 className="mt-5 text-lg font-extrabold text-sky-900 sm:text-[36px]">
               Send me a message!
