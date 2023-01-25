@@ -2,18 +2,38 @@ import Head from "next/head";
 import Image from "next/image";
 import Navbar from "../../components/Navbar";
 import { useState } from "react";
+import projectsArr from "../../data/project-content.json";
 
-const temp = "portfolio";
+interface ProjectContent {
+  picture: string;
+  name: string;
+  techStack: string;
+}
 
 export default function Portfolio() {
-  const [content, setContent] = useState();
+  const [currentArrayNumber, setCurrentArrayNumber] = useState<number>(0);
+  const [content, setContent] = useState<ProjectContent>(projectsArr[0]);
 
   function handleLeftClick() {
-    // console.log("left");
+    if (content.name === projectsArr[0].name) {
+      const lastArrayItem: number = projectsArr.length - 1;
+
+      setContent(projectsArr[lastArrayItem]);
+      setCurrentArrayNumber(lastArrayItem);
+    } else {
+      setContent(projectsArr[currentArrayNumber - 1]);
+      setCurrentArrayNumber(currentArrayNumber - 1);
+    }
   }
 
   function handleRightClick() {
-    // console.log("right");
+    if (content.name === projectsArr[projectsArr.length - 1].name) {
+      setContent(projectsArr[0]);
+      setCurrentArrayNumber(0);
+    } else {
+      setContent(projectsArr[currentArrayNumber + 1]);
+      setCurrentArrayNumber(currentArrayNumber + 1);
+    }
   }
   return (
     <>
@@ -29,17 +49,18 @@ export default function Portfolio() {
             <div id="mobile" className="mt-5 xs:hidden">
               <div className="mx-auto w-[100%]">
                 <Image
-                  src={require(`../../assets/${temp}.png`)}
+                  src={require(`../../assets/projects/${content.picture}`)}
                   alt="Portfolio"
                   className="rounded-xl border-2 border-sky-500"
+                  priority
                 />
               </div>
 
-              <p className="mt-5 text-sm">React, JavaScript, HTML/CSS</p>
-              <h3 className="mt-5 text-2xl">Portfolio</h3>
+              <p className="mt-5 text-sm">{content.techStack}</p>
+              <h3 className="mt-5 text-[16px] font-semibold">{content.name}</h3>
 
-              <div className="relative bottom-9 flex justify-between">
-                <div className="w-11" onClick={handleRightClick}>
+              <div className="relative bottom-[34px] flex justify-between">
+                <div className="w-11" onClick={handleLeftClick}>
                   <Image
                     src={require(`../../assets/icons/left-arrow.png`)}
                     alt="Left Arrow"

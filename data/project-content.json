@@ -1,37 +1,37 @@
 [
   {
-    "picture": "",
+    "picture": "portfolio.png",
     "name": "Portfolio",
-    "tech": "html/css"
+    "techStack": "Next.js, Tailwind CSS, MUI"
   },
   {
-    "picture": "piano",
-    "name": "piano",
-    "tech": "react"
+    "picture": "teslaWebsite.png",
+    "name": "Tesla Homepage",
+    "techStack": "React, Next.js, Tailwind CSS"
   },
   {
-    "picture": "",
-    "name": "tesla",
-    "tech": "next"
+    "picture": "nibblerOrigin900x800.png",
+    "name": "Nibbler",
+    "techStack": "React, Node, Express, GraphQL, JWT"
   },
   {
-    "picture": "",
-    "name": "",
-    "tech": ""
+    "picture": "foodPlanner900x800.png",
+    "name": "Food Planner",
+    "techStack": "JavaScript, jQuery, Bulma, HTML/CSS"
   },
   {
-    "picture": "",
-    "name": "",
-    "tech": ""
+    "picture": "techblogOrigin900x800.png",
+    "name": "My Tech Blog",
+    "techStack": "JS, Express, mySQL, Handlebars"
   },
   {
-    "picture": "",
-    "name": "",
-    "tech": ""
+    "picture": "weatherOrigin900x800.png",
+    "name": "Weather Dashboard",
+    "techStack": "jQuery, Bootstrap, OpenWeather API"
   },
   {
-    "picture": "",
-    "name": "",
-    "tech": ""
+    "picture": "noteTaker900x800.png",
+    "name": "Note Taker",
+    "techStack": "JavaScript, Node, Express, HTML/CSS"
   }
 ]
