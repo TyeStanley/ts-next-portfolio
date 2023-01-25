@@ -1,0 +1,37 @@
+[
+  {
+    "picture": "",
+    "name": "Portfolio",
+    "tech": "html/css"
+  },
+  {
+    "picture": "piano",
+    "name": "piano",
+    "tech": "react"
+  },
+  {
+    "picture": "",
+    "name": "tesla",
+    "tech": "next"
+  },
+  {
+    "picture": "",
+    "name": "",
+    "tech": ""
+  },
+  {
+    "picture": "",
+    "name": "",
+    "tech": ""
+  },
+  {
+    "picture": "",
+    "name": "",
+    "tech": ""
+  },
+  {
+    "picture": "",
+    "name": "",
+    "tech": ""
+  }
+]
