@@ -3,16 +3,23 @@ import Image from "next/image";
 import Navbar from "../../components/Navbar";
 import { useState } from "react";
 import projectsArr from "../../data/project-content.json";
+import ProjectInfo from "../../components/ProjectInfo";
 
 interface ProjectContent {
   picture: string;
   name: string;
   techStack: string;
+  description: string;
+  alt: string;
+  github: string;
+  website: string;
 }
 
 export default function Portfolio() {
   const [currentArrayNumber, setCurrentArrayNumber] = useState<number>(0);
   const [content, setContent] = useState<ProjectContent>(projectsArr[0]);
+
+  const [showProject, setShowProject] = useState<boolean>(false);
 
   function handleLeftClick() {
     if (content.name === projectsArr[0].name) {
@@ -42,12 +49,21 @@ export default function Portfolio() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
+      <ProjectInfo
+        content={content}
+        showProject={showProject}
+        setShowProject={setShowProject}
+      />
+
       <div className="h-screen w-screen overflow-hidden bg-[url('../assets/main-background.jpg')] bg-cover bg-center bg-no-repeat">
         <div className="justify-top flex h-full w-full flex-col bg-white/70">
           <Navbar name="Portfolio" />
           <section className="mx-auto w-[95vw] rounded-xl border border-sky-400 bg-sky-50/70 px-5 text-center">
             <div id="mobile" className="mt-5 xs:hidden">
-              <div className="mx-auto w-[100%]">
+              <div
+                className="mx-auto w-[100%]"
+                onClick={() => setShowProject(true)}
+              >
                 <Image
                   src={require(`../../assets/projects/${content.picture}`)}
                   alt="Portfolio"
@@ -56,8 +72,12 @@ export default function Portfolio() {
                 />
               </div>
 
-              <p className="mt-5 text-sm">{content.techStack}</p>
-              <h3 className="mt-5 text-[16px] font-semibold">{content.name}</h3>
+              <p className="mt-5 text-xs font-semibold text-sky-800">
+                {content.techStack}
+              </p>
+              <h3 className="mt-5 font-extrabold text-sky-900">
+                {content.name}
+              </h3>
 
               <div className="relative bottom-[34px] flex justify-between">
                 <div className="w-11" onClick={handleLeftClick}>
