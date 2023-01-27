@@ -98,7 +98,44 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <div id="desktop" className="hidden xs:block"></div>
+            <div
+              id="desktop"
+              className="my-5 hidden grid-cols-2 gap-5 xs:grid md:grid-cols-3 lg:grid-cols-4"
+            >
+              {projectsArr.map((project, index) =>
+                index === currentArrayNumber ? (
+                  <div
+                    key={index}
+                    className="rounded-xl border-2 border-sky-500 hover:scale-110"
+                    onClick={() => setShowProject(true)}
+                  >
+                    <Image
+                      src={require(`../../assets/projects/${project.picture}`)}
+                      alt={project.alt}
+                      className="rounded-xl opacity-70 transition-all hover:opacity-100"
+                      priority
+                    />
+                  </div>
+                ) : (
+                  <div
+                    key={index}
+                    className="rounded-xl border-2 border-sky-500 hover:scale-110"
+                    onClick={() => {
+                      setContent(project);
+                      setCurrentArrayNumber(index);
+                      setShowProject(true);
+                    }}
+                  >
+                    <Image
+                      src={require(`../../assets/projects/${project.picture}`)}
+                      alt={project.alt}
+                      className="rounded-xl opacity-70 transition-all hover:opacity-100"
+                      priority
+                    />
+                  </div>
+                )
+              )}
+            </div>
           </section>
         </div>
       </div>
