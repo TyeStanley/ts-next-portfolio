@@ -1,6 +1,6 @@
 [
   {
-    "picture": "portfolio.png",
+    "picture": "portfolio-project.png",
     "name": "Portfolio",
     "techStack": "Next.js, Tailwind CSS, MUI",
     "description": "This is my portfolio website. I built it with Next.js and Tailwind CSS. I used Material UI for the icons and the contact form. I also used the react-reveal library for the animations. I deployed it on Vercel.",
@@ -9,43 +9,25 @@
     "website": "https://tyestanley.com"
   },
   {
-    "picture": "teslaWebsite.png",
+    "picture": "tesla-project.png",
     "name": "Tesla Homepage",
     "techStack": "React, Next.js, Tailwind CSS",
     "description": "This is a clone of the Tesla homepage. I built it with React and Next.js. I used Tailwind CSS for the styling. I also used the react-reveal library for the animations. I deployed it on Vercel.",
     "alt": "Tesla Homepage",
     "github": "https://github.com/TyeStanley/tesla-website-clone",
-    "website": "https://tesla-clone-tye.vercel.app"
+    "website": "https://tesla-website-clone-blue.vercel.app"
   },
   {
-    "picture": "nibblerOrigin900x800.png",
-    "name": "Nibbler",
-    "techStack": "React, Node, Express, GraphQL, JWT",
-    "description": "Nibbler is a social media app that allows users to post and comment on other users' posts. I built it with React, Node, Express, GraphQL, and JWT. I used MongoDB for the database. I deployed it on Heroku.",
-    "alt": "Nibbler",
-    "github": "https://github.com/TyeStanley/nibbler",
-    "website": "https://fathomless-peak-48299.herokuapp.com/"
+    "picture": "league-project.png",
+    "name": "League of Legends player search",
+    "techStack": "React, CSS, Riot API",
+    "description": "This is a League of Legends player search app. I built it with React and CSS. I used the Riot API to get the player data. I deployed it on Heroku.",
+    "alt": "League of Legends player search",
+    "github": "https://github.com/TyeStanley/league-of-legends-api",
+    "website": "https://league-of-legends-api.herokuapp.com/"
   },
   {
-    "picture": "foodPlanner900x800.png",
-    "name": "Food Planner",
-    "techStack": "JavaScript, jQuery, Bulma, HTML/CSS",
-    "description": "This is a food planner app that allows users to search for recipes and add them to their weekly meal plan. I built it with JavaScript, jQuery, Bulma, and HTML/CSS. I used the Edamam API for the recipes. I deployed it on Heroku.",
-    "alt": "Food Planner",
-    "github": "https://github.com/TyeStanley/my-food-planner",
-    "website": "https://tyestanley.github.io/my-food-planner/"
-  },
-  {
-    "picture": "techblogOrigin900x800.png",
-    "name": "My Tech Blog",
-    "techStack": "JS, Express, mySQL, Handlebars",
-    "description": "This is my tech blog. I built it with JavaScript, Express, mySQL, and Handlebars. I deployed it on Heroku.",
-    "alt": "My Tech Blog",
-    "github": "https://github.com/TyeStanley/my-tech-blog",
-    "website": "https://github.com/TyeStanley/my-tech-blog"
-  },
-  {
-    "picture": "weatherOrigin900x800.png",
+    "picture": "weather-project.png",
     "name": "Weather Dashboard",
     "techStack": "jQuery, Bootstrap, OpenWeather API",
     "description": "This is a weather dashboard app that allows users to search for a city and see the current weather and a five-day forecast. I built it with jQuery, Bootstrap, and the OpenWeather API. I deployed it on Heroku.",
@@ -54,12 +36,21 @@
     "website": "https://tyestanley.github.io/weather-dashboard/"
   },
   {
-    "picture": "noteTaker900x800.png",
+    "picture": "note-project.png",
     "name": "Note Taker",
     "techStack": "JavaScript, Node, Express, HTML/CSS",
     "description": "This is a note taker app that allows users to create, save, and delete notes. I built it with JavaScript, Node, Express, and HTML/CSS. I deployed it on Heroku.",
     "alt": "Note Taker",
     "github": "https://github.com/TyeStanley/note-taker",
     "website": "https://tye-note-taker.herokuapp.com/"
+  },
+  {
+    "picture": "blog-project.png",
+    "name": "My Tech Blog",
+    "techStack": "JS, Express, mySQL, Handlebars",
+    "description": "This is my tech blog. I built it with JavaScript, Express, mySQL, and Handlebars. I deployed it on Heroku.",
+    "alt": "My Tech Blog",
+    "github": "https://github.com/TyeStanley/my-tech-blog",
+    "website": "https://tech-blog-by-tye.herokuapp.com/"
   }
 ]

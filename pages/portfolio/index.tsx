@@ -106,20 +106,20 @@ export default function Portfolio() {
                 index === currentArrayNumber ? (
                   <div
                     key={index}
-                    className="rounded-xl border-2 border-sky-500 hover:scale-110"
+                    className="overflow-hidden rounded-xl border-2 border-sky-500 hover:scale-110"
                     onClick={() => setShowProject(true)}
                   >
                     <Image
                       src={require(`../../assets/projects/${project.picture}`)}
                       alt={project.alt}
-                      className="rounded-xl opacity-70 transition-all hover:opacity-100"
+                      className="h-full w-full opacity-70 transition-all hover:opacity-100"
                       priority
                     />
                   </div>
                 ) : (
                   <div
                     key={index}
-                    className="rounded-xl border-2 border-sky-500 hover:scale-110"
+                    className="overflow-hidden rounded-xl border-2 border-sky-500 hover:scale-110"
                     onClick={() => {
                       setContent(project);
                       setCurrentArrayNumber(index);
@@ -129,7 +129,7 @@ export default function Portfolio() {
                     <Image
                       src={require(`../../assets/projects/${project.picture}`)}
                       alt={project.alt}
-                      className="rounded-xl opacity-70 transition-all hover:opacity-100"
+                      className="h-full w-full opacity-70 transition-all hover:opacity-100"
                       priority
                     />
                   </div>
