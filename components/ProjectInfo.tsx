@@ -59,12 +59,12 @@ export default function ProjectInfo(props: ProjectContent) {
                 {description}
               </p>
               <div className="pt-5">
-                <Link href={github}>
+                <Link href={github} target="_blank">
                   <button className="m-1 h-[35px] w-[100px] rounded border border-gray-100 bg-sky-500 text-gray-100 shadow-md hover:bg-sky-400">
                     GITHUB
                   </button>
                 </Link>
-                <Link href={website}>
+                <Link href={website} target="_blank">
                   <button className="m-1 h-[35px] w-[100px] rounded border border-gray-100 bg-sky-500 text-gray-100 shadow-md hover:bg-sky-400">
                     LIVE
                   </button>
