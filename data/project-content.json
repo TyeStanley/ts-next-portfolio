@@ -19,12 +19,12 @@
   },
   {
     "picture": "league-project.png",
-    "name": "League of Legends player search",
-    "techStack": "React, CSS, Riot API",
-    "description": "This is a League of Legends player search app. I built it with React and CSS. I used the Riot API to get the player data. I deployed it on Heroku.",
-    "alt": "League of Legends player search",
-    "github": "https://github.com/TyeStanley/league-of-legends-api",
-    "website": "https://league-of-legends-api.herokuapp.com/"
+    "name": "LoL Nexus",
+    "techStack": "TypeScript, Next.js, Tailwind CSS, Riot API",
+    "description": "This is my app for searching for league of legends player matches. I built it with Next.js and Tailwind CSS. I used Riot's API for fetching the data. I also deployed it on Vercel.",
+    "alt": "LoL Nexus App",
+    "github": "https://github.com/TyeStanley/lolnexus",
+    "website": "https://lolnexus.vercel.app"
   },
   {
     "picture": "weather-project.png",

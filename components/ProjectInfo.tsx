@@ -37,9 +37,9 @@ export default function ProjectInfo(props: ProjectContent) {
         <div className="fixed inset-0 z-[60] flex flex-col items-center border-2 border-sky-400 bg-sky-100/90 px-5 pt-5 text-center">
           <button
             onClick={() => setShowProject(false)}
-            className="h-[35px] w-[100%] max-w-[400px] rounded border border-gray-100 bg-sky-500 text-gray-100 shadow-md hover:bg-sky-400"
+            className="ml-auto h-[35px] w-9 rounded border border-gray-100 bg-sky-500 text-gray-100 shadow-md hover:bg-sky-400"
           >
-            CLOSE
+            ✗
           </button>
           <div className="sm:mt-5 sm:flex">
             <div className="mx-auto max-w-[400px] pt-5 sm:mr-2 sm:w-[50%] sm:grow">
