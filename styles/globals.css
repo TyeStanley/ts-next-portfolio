@@ -144,6 +144,54 @@ a {
   animation-delay: 2s;
 }
 
+/* project section for adding different delays on first load */
+.reveal0 {
+  animation: reveal 0.5s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -moz-animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -o-animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -webkit-animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  animation-delay: 0.5s;
+}
+.reveal1 {
+  animation: reveal 0.5s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -moz-animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -o-animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -webkit-animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  animation-delay: 1s;
+}
+.reveal2 {
+  animation: reveal 0.5s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -moz-animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -o-animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -webkit-animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  animation-delay: 1.5s;
+}
+.reveal3 {
+  animation: reveal 0.5s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -moz-animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -o-animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -webkit-animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  animation-delay: 2s;
+}
+.reveal4 {
+  animation: reveal 0.5s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -moz-animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -o-animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -webkit-animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  animation-delay: 2.5s;
+}
+.reveal5 {
+  animation: reveal 0.5s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -moz-animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -o-animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -webkit-animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  animation-delay: 3s;
+}
+
+.projects-hover:hover {
+  transform: scale(1.09);
+}
+
 @keyframes spin {
   0% {
     transform: rotateX(0) rotateY(0);
