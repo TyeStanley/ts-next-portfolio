@@ -58,7 +58,7 @@ export default function Portfolio() {
       <div className="h-screen w-screen overflow-hidden bg-[url('../assets/main-background.jpg')] bg-cover bg-center bg-no-repeat">
         <div className="justify-top flex h-full w-full flex-col bg-white/70">
           <Navbar name="Portfolio" />
-          <section className="mx-auto w-[95vw] rounded-xl border border-sky-400 bg-sky-50/70 px-5 text-center">
+          <section className="mx-auto mb-2 w-[95vw] rounded-xl border border-sky-400 bg-sky-50/70 px-5 text-center">
             <div id="mobile" className="mt-5 xs:hidden">
               <div
                 className="mx-auto w-[100%]"
@@ -100,12 +100,12 @@ export default function Portfolio() {
 
             <div
               id="desktop"
-              className="my-5 hidden grid-cols-2 gap-5 xs:grid md:grid-cols-3 lg:grid-cols-4"
+              className="my-5 hidden gap-5 xs:grid xs:grid-cols-3 lg:grid-cols-4"
             >
               {projectsArr.map((project, index) => (
                 <div
                   key={index}
-                  className={`reveal${index} overflow-hidden rounded-xl border-2 border-sky-500 opacity-0 hover:border-sky-700`}
+                  className={`reveal${index} overflow-hidden rounded-xl border-2 border-sky-500 opacity-0 hover:border-sky-700 lg:max-h-[43vh]`}
                   onClick={() => {
                     setContent(project);
                     setCurrentArrayNumber(index);
